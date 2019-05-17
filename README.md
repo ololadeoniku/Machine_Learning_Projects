@@ -1,3 +1,3 @@
 # python-projects
-Projects based on python code
-differet from the master file
+Projects based on python code,
+different from the master file
