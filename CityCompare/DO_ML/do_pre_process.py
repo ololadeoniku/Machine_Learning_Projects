@@ -61,7 +61,7 @@ def find_row(df, column_name, row_value):
     return df.loc[df[column_name] == row_value]
 
 
-def get_chi_square(column1, column2):  # chi square for independence
+def get_chi_square(column1, column2):  # chi square for independence, used for test of variances for 2 independent sample tests
     from scipy.stats import chi2_contingency
     df = pd.crosstab(column1, column2)
     chi2, p, dof, expected = chi2_contingency(df.values)
